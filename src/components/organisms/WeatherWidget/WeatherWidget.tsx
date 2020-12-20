@@ -28,6 +28,14 @@ const WeatherWidget = () => {
     }
   }, [data]);
 
+  const onHourSelectHandle = (time: number) => {
+    const itemIndex = data?.list.findIndex((item) => item.dt === time);
+    if (data && itemIndex && itemIndex > -1) {
+      setCurrentWeatherIndex(itemIndex);
+      setCurrentWeather(data.list[itemIndex]);
+    }
+  };
+
   return (
     <div className="weather-widget">
       {data && (
@@ -36,6 +44,7 @@ const WeatherWidget = () => {
           <HourlyWeather
             list={hourlyList}
             currentWeatherIndex={currentWeatherIndex}
+            onHourSelect={onHourSelectHandle}
           />
         </>
       )}

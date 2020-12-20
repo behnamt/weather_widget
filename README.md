@@ -29,3 +29,4 @@ Launches the test runner in the interactive watch mode.\
 1. used img-svg for now
 1. import svg directly
 1. import all styles in styles/index.scss so I can use mixins and variables
+1. turned off jsx-a11y/click-events-have-key-events and jsx-a11y/interactive-supports-focus rules in eslint: no time
