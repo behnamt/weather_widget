@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import WeatherSun from '../../../icons/weather-sun.svg';
-import { IWeatherIcon } from '../../../types/WeatherDataContext';
+import React from 'react';
+import { ReactComponent as WeatherSun } from '../../../icons/weather-sun.svg';
 
 interface IWeatherIconProps {
   weatherIconId: number | undefined;
@@ -8,34 +7,21 @@ interface IWeatherIconProps {
 
 const WeatherIcon: React.FC<IWeatherIconProps> = (props: IWeatherIconProps) => {
   const { weatherIconId } = props;
-  const [weatherIcon, setWeatherIcon] = useState<IWeatherIcon | null>({
-    icon: '',
-    name: '',
-  });
-
-  useEffect(() => {
-    console.log(weatherIconId);
-
+  const getIcon = (): any => {
     if (weatherIconId) {
       switch (weatherIconId) {
         case 500:
         case 800:
-          setWeatherIcon({ icon: WeatherSun, name: 'sun' });
-          break;
+          return <WeatherSun className="fill-sun" />;
 
         default:
-          setWeatherIcon({ icon: '', name: '' });
+          return null;
       }
     }
-  }, [weatherIconId]);
+    return null;
+  };
 
-  return (
-    <img
-      src={weatherIcon?.icon}
-      alt={weatherIcon?.name}
-      className={`weather-icon weather-icon__${weatherIcon?.name}`}
-    />
-  );
+  return <>{getIcon()}</>;
 };
 
 export default WeatherIcon;

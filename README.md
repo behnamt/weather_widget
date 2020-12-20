@@ -27,3 +27,4 @@ Launches the test runner in the interactive watch mode.\
 1. separate react components based on atomic concept 
 1. since the data from api is from 2017, I used a random index of data to mock current hour
 1. used img-svg for now
+1. import svg directly
