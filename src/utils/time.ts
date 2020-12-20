@@ -22,11 +22,26 @@ const months = [
   'December',
 ];
 
-export const getDay = (time: number | undefined) =>
-  new Date(time || 0).getDate();
+export const getDay = (time: number | undefined = 0) => {
+  const date = new Date(0);
+  date.setUTCSeconds(time);
+  return date.getDate();
+};
 
-export const getDayOfWeek = (time: number | undefined) =>
-  days[new Date(time || 0).getDay()];
+export const getDayOfWeek = (time: number | undefined = 0) => {
+  const date = new Date(0);
+  date.setUTCSeconds(time);
+  return days[date.getDay()];
+};
 
-export const getMonth = (time: number | undefined) =>
-  months[new Date(time || 0).getMonth()];
+export const getMonth = (time: number | undefined = 0) => {
+  const date = new Date(0);
+  date.setUTCSeconds(time);
+  return months[date.getMonth()];
+};
+
+export const getHour = (time: number | undefined = 0) => {
+  const date = new Date(0);
+  date.setUTCSeconds(time);
+  return date.getHours();
+};
