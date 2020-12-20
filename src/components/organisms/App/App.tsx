@@ -4,7 +4,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="container app">
       <main className="app__main">
         <WeatherWidget />
       </main>
