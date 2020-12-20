@@ -1,3 +1,12 @@
+export interface IWeatherIconMapping {
+  [key: number]: string;
+}
+
+export interface IWeatherIcon {
+  icon: string;
+  name: string;
+}
+
 export interface IWeatherSegmentMain {
   temp: number;
   temp_max: number;
@@ -7,6 +16,7 @@ export interface IWeatherSegmentMain {
 export interface IWeatherSegmentWeather {
   id: number;
   description: string;
+  icon: string;
 }
 
 export interface IWeatherSegmentItem {

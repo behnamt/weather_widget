@@ -33,7 +33,7 @@ const WeatherWidget = () => {
     <div className="weather-widget">
       {data && (
         <>
-          <CurrentWeather weather={currentWeather} city={city} />
+          <CurrentWeather status={currentWeather} city={city} />
           <HourlyWeather
             list={hourlyList}
             currentWeatherIndex={currentWeatherIndex}

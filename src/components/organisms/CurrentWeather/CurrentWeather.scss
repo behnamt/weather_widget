@@ -1,3 +1,11 @@
 .current-weather {
   height: 50vh;
+  display: flex;
+  flex-direction: row;
+
+  &__icon {
+    > img {
+      width: 328px;
+    }
+  }
 }
