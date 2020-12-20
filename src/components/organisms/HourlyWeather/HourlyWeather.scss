@@ -12,11 +12,11 @@
     margin-right: 0.5rem;
 
     &--selected {
-      background-color: #51557A;
+      background-color: $secondary;
     }
 
     &-hour {
-      color: #A8AABD;
+      color: $indigo;
       font-size: 47.78px;
       line-height: 56px;
     }

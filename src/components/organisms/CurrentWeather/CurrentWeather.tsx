@@ -3,7 +3,6 @@ import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
 import WeatherIcon from '../../atoms/WeatherIcon/WeatherIcon';
 import WeatherInfo from '../../molecules/WeatherInfo/WeatherInfo';
 import WeatherStatus from '../../molecules/WeatherStatus/WeatherStatus';
-import './CurrentWeather.scss';
 
 interface ICurrentWeatherProps {
   city: string;

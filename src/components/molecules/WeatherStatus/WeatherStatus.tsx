@@ -1,6 +1,5 @@
 import React from 'react';
 import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
-import './WeatherStatus.scss';
 
 interface IWeatherStatusProps {
   status: IWeatherSegmentItem | null;

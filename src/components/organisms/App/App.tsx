@@ -1,6 +1,5 @@
 import React from 'react';
 import WeatherWidget from '../WeatherWidget/WeatherWidget';
-import './App.scss';
 
 const App = () => {
   return (

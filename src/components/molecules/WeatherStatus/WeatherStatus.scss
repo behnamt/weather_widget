@@ -6,14 +6,14 @@
   grid-column-gap: 0.5rem;
   
   &__description {
-    color: #A8AABD;
+    color: $indigo;
     justify-self: start;
     font-size: 50px;
     line-height: 56px;
   }
 
   &__max-min {
-    color: #A8AABD;
+    color: $indigo;
     justify-self: end;
     font-size: 50px;
     line-height: 56px;

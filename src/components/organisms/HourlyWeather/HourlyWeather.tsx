@@ -2,7 +2,6 @@ import React from 'react';
 import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
 import { getHour } from '../../../utils/time';
 import WeatherIcon from '../../atoms/WeatherIcon/WeatherIcon';
-import './HourlyWeather.scss';
 
 interface IHourlyWeatherProps {
   list: IWeatherSegmentItem[] | null;

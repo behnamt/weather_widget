@@ -3,7 +3,6 @@ import { useWeatherDataContext } from '../../../contexts/WeatherData';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import Error from '../../molecules/Error/Error';
 import LoadingIndicator from '../../molecules/LoadingIndicator/LoadingIndicator';
-import './WeatherWidget.scss';
 import HourlyWeather from '../HourlyWeather/HourlyWeather';
 import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
 

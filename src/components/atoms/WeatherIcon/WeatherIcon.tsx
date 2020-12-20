@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './WeatherIcon.scss';
 import WeatherSun from '../../../icons/weather-sun.svg';
 import { IWeatherIcon } from '../../../types/WeatherDataContext';
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './WeatherInfo.scss';
 import { getDay, getDayOfWeek, getMonth } from '../../../utils/time';
 
 interface IWeatherInfoProps {
