@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Weather Wiiiiidget/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/Weather Wiiiiidget/i);
+  expect(headerElement).toBeInTheDocument();
 });
