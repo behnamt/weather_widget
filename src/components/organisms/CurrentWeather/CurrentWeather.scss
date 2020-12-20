@@ -4,8 +4,11 @@
   flex-direction: row;
 
   &__icon {
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: center;
     > img {
-      width: 328px;
+      width: 160px;
     }
   }
 }

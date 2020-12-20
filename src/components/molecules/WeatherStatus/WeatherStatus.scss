@@ -1,0 +1,29 @@
+.weather-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  
+  &__description {
+    justify-self: start;
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  &__max-min {
+    justify-self: end;
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  &__temp {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+    line-height: 256px;
+    font-size: 140px;
+    font-weight: 700;
+  }
+}
