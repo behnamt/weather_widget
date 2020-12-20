@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  IWeatherSegmentItem,
-} from '../../../types/WeatherDataContext';
+import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
 import WeatherIcon from '../../atoms/WeatherIcon/WeatherIcon';
 import './CurrentWeather.scss';
 
