@@ -1,15 +1,71 @@
 .current-weather {
-  height: 50vh;
+  
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
 
+  @include phone {
+    height: 50vh;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    margin-top: 2rem;
+  }
+
   &__icon {
+    flex:1;
     margin: 2rem 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @include phone {
+      order: 2;
+      justify-content: center;
+    }
+
     > svg {
       width: 160px;
+
+      @include phone {
+        width: 100px;
+      }
+    
+      @include tablet {
+        width: 130px;
+      }
+    }
+  }
+
+  &__status {
+    flex: 3;
+    padding: 0 2rem;
+
+    @include phone {
+      order: 3;
+      padding: 0 0.25rem;
+    }
+
+    @include tablet {
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__info {
+    flex:2;
+    padding: 0 2rem;
+
+    @include phone {
+      padding: 0 0.25rem;
+      order: 1;
+    }
+
+    @include tablet {
+      padding: 0 0.5rem;
     }
   }
 }

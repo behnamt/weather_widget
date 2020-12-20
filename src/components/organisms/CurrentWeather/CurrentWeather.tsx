@@ -22,7 +22,7 @@ const CurrentWeather: React.FC<ICurrentWeatherProps> = (
       <div className="current-weather__status">
         <WeatherStatus status={status} />
       </div>
-      <div className="current-weather__general-info">
+      <div className="current-weather__info">
         <WeatherInfo city={city} time={status?.dt} />
       </div>
     </div>

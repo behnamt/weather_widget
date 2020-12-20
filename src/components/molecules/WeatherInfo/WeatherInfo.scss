@@ -1,17 +1,29 @@
 .weather-info {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
   
   &__city {
     color: $indigo;
     font-weight: 400;
-    font-size: 50px;
+    @include fluid-type($phone-width, $desktop-width, 14px, 50px);
     line-height: 56px;
   }
 
-  &__day-of-week, &__day-of-month {
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 128px;
+  &__date {
+    align-self: center;
+    
+    &-day {
+      display: block;
+    }
+
+    &-day, &-month {
+      font-weight: 700;
+      @include fluid-type($phone-width, $xl-width, 35px, 90px);
+      white-space: nowrap;
+    }
   }
 }

@@ -1,4 +1,5 @@
 .weather-status {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20% 80%;
@@ -9,13 +10,16 @@
     color: $indigo;
     justify-self: start;
     font-size: 50px;
+    white-space: nowrap;
+    @include fluid-type($phone-width, $desktop-width, 14px, 50px);
     line-height: 56px;
   }
 
   &__max-min {
     color: $indigo;
     justify-self: end;
-    font-size: 50px;
+    white-space: nowrap;
+    @include fluid-type($phone-width, $desktop-width, 14px, 50px);
     line-height: 56px;
   }
 
@@ -25,7 +29,7 @@
     justify-self: center;
     align-self: center;
     line-height: 256px;
-    font-size: 140px;
+    @include fluid-type($phone-width, $desktop-width, 50px, 140px);
     font-weight: 700;
   }
 }

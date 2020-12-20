@@ -12,10 +12,12 @@ const WeatherInfo: React.FC<IWeatherInfoProps> = (props: IWeatherInfoProps) => {
   return (
     <div className="weather-info">
       <span className="weather-info__city">{city}</span>
-      <span className="weather-info__day-of-week">{getDayOfWeek(time)}</span>
-      <span className="weather-info__day-of-month">
-        {`${getDay(time)}. ${getMonth(time)}`}
-      </span>
+      <div className="weather-info__date">
+        <span className="weather-info__date-day">{getDayOfWeek(time)}</span>
+        <span className="weather-info__date-month">
+          {`${getDay(time)}. ${getMonth(time)}`}
+        </span>
+      </div>
     </div>
   );
 };

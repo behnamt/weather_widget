@@ -28,3 +28,4 @@ Launches the test runner in the interactive watch mode.\
 1. since the data from api is from 2017, I used a random index of data to mock current hour
 1. used img-svg for now
 1. import svg directly
+1. import all styles in styles/index.scss so I can use mixins and variables
