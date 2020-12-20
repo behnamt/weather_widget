@@ -25,3 +25,4 @@ Launches the test runner in the interactive watch mode.\
 1. No global storage (e.g. redux) is required. I will use a context to fetch data and store it globaly
 1. fix CORS temporarly with `cors-anywhere.herokuapp.com`
 1. separate react components based on atomic concept 
+1. since the data from api is from 2017, I used a random index of data to mock current hour
