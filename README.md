@@ -19,3 +19,8 @@ Launches the test runner in the interactive watch mode.\
 `yarn lint`
 ### Prettier
 `yarn format`
+
+## Decisions
+1. No CSS framework(e.g. tailwindcss) is required. can be done with simple css
+1. No global storage (e.g. redux) is required. I will use a context to fetch data and store it globaly
+1. fix CORS temporarly with `cors-anywhere.herokuapp.com`
