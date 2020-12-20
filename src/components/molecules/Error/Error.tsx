@@ -7,7 +7,12 @@ interface IErrorProps {
 
 const Error: React.FC<IErrorProps> = (props: IErrorProps) => {
   const { error } = props;
-  return <div className="error">Error</div>;
+  return (
+    <div className="error">
+      <h1 className="error__headline">Technical difficalities!</h1>
+      <span className="error__subtitle">please try later</span>
+    </div>
+  );
 };
 
 export default Error;
