@@ -21,8 +21,9 @@ const WeatherWidget = () => {
   useEffect(() => {
     if (data) {
       const hourIndex = Math.floor(Math.random() * data.list.length);
+      console.log(data.city.name);
 
-      setCity(data.city);
+      setCity(data.city.name);
       setHourlyList(data.list);
       setCurrentWeatherIndex(hourIndex);
       setCurrentWeather(data.list[hourIndex]);

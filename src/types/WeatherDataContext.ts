@@ -27,7 +27,7 @@ export interface IWeatherSegmentItem {
 }
 
 export interface IOpenWeatherMap {
-  city: string;
+  city: { name: string };
   list: IWeatherSegmentItem[];
 }
 

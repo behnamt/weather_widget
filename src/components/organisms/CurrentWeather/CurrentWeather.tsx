@@ -1,6 +1,7 @@
 import React from 'react';
 import { IWeatherSegmentItem } from '../../../types/WeatherDataContext';
 import WeatherIcon from '../../atoms/WeatherIcon/WeatherIcon';
+import WeatherInfo from '../../molecules/WeatherInfo/WeatherInfo';
 import WeatherStatus from '../../molecules/WeatherStatus/WeatherStatus';
 import './CurrentWeather.scss';
 
@@ -22,7 +23,9 @@ const CurrentWeather: React.FC<ICurrentWeatherProps> = (
       <div className="current-weather__status">
         <WeatherStatus status={status} />
       </div>
-      <div className="current-weather__general-info" />
+      <div className="current-weather__general-info">
+        <WeatherInfo city={city} time={status?.dt} />
+      </div>
     </div>
   );
 };
