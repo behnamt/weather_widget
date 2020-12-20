@@ -11,7 +11,7 @@ const weatherDataContext = createContext<IWeatherDataContext>({
   error: undefined,
 });
 
-const useWeatherDataContext = (): any => useContext(weatherDataContext);
+const useWeatherDataContext = (): IWeatherDataContext => useContext(weatherDataContext);
 
 const useWeatherDataContextProvider = (): IWeatherDataContext => {
   const headers = {
