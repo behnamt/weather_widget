@@ -36,9 +36,10 @@ Your app is ready to be deployed!
 1. import all styles in styles/index.scss so I can use mixins and variables
 1. turned off jsx-a11y/click-events-have-key-events and jsx-a11y/interactive-supports-focus rules in eslint: no time
 1. no tests: no time
+1. add proxy to package.json and use AsyncState to fetch api
 
 ## ToDo:
 
 1. turned on jsx-a11y/click-events-have-key-events and jsx-a11y/interactive-supports-focus rules in eslint
 1. write unit tests
-1. fix CORS
+1. ~~fix CORS~~
